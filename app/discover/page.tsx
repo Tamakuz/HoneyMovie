@@ -1,8 +1,7 @@
-"use client";
 import { Skeleton } from "@/components/ui/skeleton";
 import { fetcher } from "@/lib/utils";
 import { useSearchParams } from "next/navigation";
-import React from "react";
+import React, { Suspense } from "react";
 import useSWR from "swr";
 import CardMovie from "../atomics/Reuseble/CardMovie";
 
@@ -23,7 +22,7 @@ const Discover = () => {
     (url) => fetcher(url)
   );
   return (
-    <>
+    <Suspense fallback={<div>Loading...</div>}>
       <div className="overflow-y-auto py-5">
         <h1 className="font-extrabold text-[30px] mb-5">Discover</h1>
         <div className="flex flex-wrap justify-around gap-5">
@@ -45,7 +44,7 @@ const Discover = () => {
               ))}
         </div>
       </div>
-    </>
+    </Suspense>
   );
 };
 

@@ -1,10 +1,9 @@
-"use server"
+"use client"
 import React from "react";
 import Titlemenu from "../atomics/Sidebar/Titlemenu";
 import Menu from "../atomics/Sidebar/Menu";
 
 const Sidebar = () => {
-  
   return (
     <div className="space-y-10">
       <div className="flex flex-col gap-2">

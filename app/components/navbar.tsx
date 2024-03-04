@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import Brand from "../atomics/navbar/brand";
 import ListBar from "../atomics/navbar/ListBar";

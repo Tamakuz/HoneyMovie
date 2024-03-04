@@ -19,7 +19,7 @@ const ListBar = () => {
     } else {
       router.push(`?category=${category}`);
     }
-  }, [CurrentPathname, prevPathName, category]);
+  }, [CurrentPathname, prevPathName, category, router]);
 
   const ChangeCategory = (str: Category) => {
     setCategory(str);
