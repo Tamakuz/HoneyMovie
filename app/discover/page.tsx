@@ -5,10 +5,8 @@ import { useSearchParams } from "next/navigation";
 import React from "react";
 import useSWR from "swr";
 import CardMovie from "../atomics/Reuseble/CardMovie";
-import useQuery from "@/lib/useQuery";
 
 const Discover = () => {
-  useQuery({ page: 1 });
   const params = useSearchParams();
   const currentParamsQuery = params.get("category");
   const { data, isLoading } = useSWR(
