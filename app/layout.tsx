@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/navbar";
 import Sidebar from "./components/Sidebar";
-
+import { Providers } from "./providers";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,7 +19,7 @@ export default function RootLayout({
       <body>
         <main className="scrollbar-thumb-gray-900 scrollbar-track-gray-800">
           <Navbar />
-          <div className="container h-[calc(100vh-118px)] flex gap-5 overflow-hidden">
+          <div className="container h-[calc(100vh-98px)] flex gap-5 overflow-hidden">
             <Sidebar />
             {children}
           </div>
