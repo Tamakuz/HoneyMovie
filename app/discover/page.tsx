@@ -38,7 +38,7 @@ const Discover = () => {
   };
 
   return (
-    <div className="overflow-y-auto py-5 scrollbar-thin">
+    <div className="overflow-y-auto py-5 scrollbar-none">
       <h1 className="font-extrabold text-[30px] mb-5">Discover</h1>
       <div className="flex flex-wrap justify-around gap-5">
         {isValidating || !data

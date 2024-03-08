@@ -61,15 +61,6 @@ const Menu = ({ menu, PathnameRoute }: MenuProps) => {
         />
       );
       break;
-    case "recent":
-      iconComponent = (
-        <FaClockRotateLeft
-          className={`${
-            Pathname === "/recent" ? "text-PrimaryYellow" : "text-white"
-          } text-[18px]`}
-        />
-      );
-      break;
     case "top rated":
       iconComponent = (
         <FaRegStar

@@ -3,12 +3,12 @@
 import { usePathname, useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
-type Category = "movie" | "tvshow" | "anime";
+type Category = "movie" | "tvshow";
 
 const ListBar = () => {
   const router = useRouter();
   const CurrentPathname = usePathname();
-  const categories: Category[] = ["movie", "tvshow", "anime"];
+  const categories: Category[] = ["movie", "tvshow"];
   const [prevPathName, setPrevPathName] = useState<string>("/");
   const [category, setCategory] = useState<Category>("movie");
 

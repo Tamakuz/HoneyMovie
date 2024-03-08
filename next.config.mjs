@@ -6,9 +6,13 @@ const nextConfig = {
         protocol: 'https',
         hostname: "image.tmdb.org",
       },
+      {
+        protocol: 'https',
+        hostname: "img.freepik.com",
+      },
+      // Tambahkan hostname lainnya di sini jika diperlukan
     ],
   },
-  output: 'export',
   experimental: {
     missingSuspenseWithCSRBailout: false,
   },

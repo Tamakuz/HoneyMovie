@@ -15,7 +15,6 @@ const Sidebar = () => {
       </div>
       <div className="flex flex-col gap-2">
         <Titlemenu title="library" />
-        <Menu menu="recent" PathnameRoute="/recent" />
         <Menu menu="top rated" PathnameRoute="/top-rated" />
         <Menu menu="downloaded" PathnameRoute="/downloaded" />
         <Menu menu="playlist" PathnameRoute="/playlist" />
@@ -23,7 +22,6 @@ const Sidebar = () => {
       <div className="flex flex-col gap-2">
         <Titlemenu title="general" />
         <Menu menu="setting" PathnameRoute="/setting" />
-        <Menu menu="top rated" PathnameRoute="/top-rated" />
       </div>
     </div>
   );

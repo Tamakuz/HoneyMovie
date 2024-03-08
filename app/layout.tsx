@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <main className="scrollbar-thumb-gray-900 scrollbar-track-gray-800">
+        <main className="scrollbar-thumb-gray-900 scrollbar-track-gray-800 h-[100vh]">
           <Navbar />
           <div className="container h-[calc(100vh-98px)] flex gap-5 overflow-hidden">
             <Sidebar />
